@@ -9,7 +9,10 @@
 
 html{
     scroll-behavior: smooth;
-    background: rgb(255, 245, 230);
+    background-color: #3E1CAC;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%233E1CAC' cx='50' cy='0' r='50'/%3E%3Cg fill='%234e1bb1' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%235b1bb6' cx='50' cy='100' r='50'/%3E%3Cg fill='%23671abb' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%237119bf' cx='50' cy='200' r='50'/%3E%3Cg fill='%237b18c4' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%238417c9' cx='50' cy='300' r='50'/%3E%3Cg fill='%238c17cd' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%239416d1' cx='50' cy='400' r='50'/%3E%3Cg fill='%239b15d5' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a214d9' cx='50' cy='500' r='50'/%3E%3Cg fill='%23a913de' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b012e1' cx='50' cy='600' r='50'/%3E%3Cg fill='%23b611e5' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23bc0fe9' cx='50' cy='700' r='50'/%3E%3Cg fill='%23c20eed' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c80df1' cx='50' cy='800' r='50'/%3E%3Cg fill='%23cd0bf4' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d309f8' cx='50' cy='900' r='50'/%3E%3Cg fill='%23d806fc' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23D0F' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
 }
 
 a{
@@ -74,6 +77,7 @@ a{
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
     font-weight: 600;
+    color: #FFF;
 }
 
 
@@ -87,6 +91,14 @@ a{
     background-color: rgba(0,0,0,0.75);
     text-align: center;
     color: #FFF;
+}
+.hero-logo{
+    position: relative;
+    align-self: center;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 .hero-heading{
     font-family: 'Roboto', sans-serif;
@@ -117,8 +129,33 @@ a{
     transition: all .3s ease-in-out;
 }
 .main-btn:hover{
-    background: blue;
+    background: blue !important;
+    transform: scaleX(1.1);
 }
+
+
+.poster{
+    height: auto;
+    background: url('./img/posterbg.png') center/cover no-repeat;
+    color: #FFF;
+}
+.poster-container{
+    margin-top: 4rem;
+}
+.poster-right{
+    width: 50%;
+    text-align: end;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.devices{
+    position: relative;
+    width: 720px;
+}
+
 
 
 .features-container{
@@ -158,6 +195,19 @@ a{
 .features-item--desc{
     text-align: center;
 }
+
+
+.gallery{
+    background: aqua;
+}
+.gallery h1{
+    color: #000;
+}
+.gallery-img{
+    border-radius: 16px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
 
 .aboutus{
     height: 100vh;
@@ -256,6 +306,21 @@ footer{
         width: 100%;
         padding: 0;
     }
+
+    .tagline{
+        font-size: 1.2rem;
+    }
+    .poster-right{
+        width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .devices{
+        width: 80vw;
+    }
+    
 
     .aboutus{
         padding-top: 6rem;
