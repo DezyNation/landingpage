@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;500;700&display=swap');
 
 :root{
-    --primcolor: rgb(200, 200, 0);
+    --primcolor: rgb(254, 193, 7);
 }
 
 *, ::after, ::before{
@@ -131,10 +131,10 @@ header{
     text-align: center;
 }
 .hero-container h1{
-    color: rgb(200, 200, 5);
+    color: rgb(254, 193, 7);
 }
 .hero-container p{
-    color: rgb(165, 165, 5);
+    color: rgb(210, 160, 2);
 }
 .hero-right{
     width: 50vw;
@@ -174,7 +174,7 @@ header{
 }
 .main-btn:hover{
     background: blue !important;
-    transform: scaleX(1.1);
+    transform: scaleX(1.05);
 }
 
 
